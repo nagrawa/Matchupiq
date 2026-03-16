@@ -109,13 +109,10 @@ Return ONLY valid JSON (no markdown, no backticks):
   "confidence": "High" | "Medium" | "Low"
 }`;
 
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
+  const response = await fetch("/api/analyze", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-api-key": ANTHROPIC_API_KEY,
-      "anthropic-version": "2023-06-01",
-      "anthropic-dangerous-direct-browser-ipc": "true",
     },
     body: JSON.stringify({
       model: "claude-sonnet-4-20250514",
