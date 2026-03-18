@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 
 const GOLF_TOURNAMENTS = [
-  { name: "The Players Championship", course: "TPC Sawgrass", surface: "Bermuda" },
+  { name: "The Valspar Championship", course: "Copperhead", surface: "Bent Grass" },
   { name: "Masters Tournament", course: "Augusta National", surface: "Bent Grass" },
   { name: "PGA Championship", course: "Aronimink GC", surface: "Bentgrass" },
   { name: "US Open", course: "Oakmont CC", surface: "Bentgrass" },
